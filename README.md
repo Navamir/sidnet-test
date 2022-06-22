@@ -1,1 +1,1 @@
-# sidnet-test
+# Aplikacja rekrutacyjna do Sidnet
