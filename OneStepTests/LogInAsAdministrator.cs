@@ -25,8 +25,10 @@ namespace SidnetTest.TestCases
             Initiate();
             logInHelper.DoLogIn(driver, ConfigValues.AdminUserName, ConfigValues.AdminPassword);
 
-            Assert.IsTrue(driver.FindElements(By.Id("nav-Dashboard")).Count == 1);
-            Assert.IsTrue(driver.FindElements(By.Id("nav-Admin")).Count == 1);
+            Assert.IsTrue(driver.FindElements(PageHandlers.NavigationDashboard).Count == 1,
+                "Was expecting to be logged but user dashboard is not present.");
+            Assert.IsTrue(driver.FindElements(PageHandlers.AdminDashboard).Count == 1,
+                "Was expecting to be logged as admin but admin dashboard is not present.");
 
             logOutHelper.DoLogOut(driver);
         }
