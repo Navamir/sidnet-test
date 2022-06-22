@@ -12,7 +12,7 @@ namespace SidnetTest.GeneralHelpers
     {
         public static IWebDriver PrepareWebDriver()
         {
-            IWebDriver driver = new ChromeDriver(@"E:\Repo\SidnetTest\drivers\");
+            IWebDriver driver = new ChromeDriver(@"..\..\..\..\drivers\");
             driver.Url = "https://otrs-test.sidnet.info/otrs/index.pl";
             driver.Manage().Window.Maximize();
             return driver;

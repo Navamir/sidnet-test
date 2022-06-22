@@ -6,8 +6,8 @@ namespace SidnetTest.GeneralHelpers.TestFunction
     {
         public void DoLogOut(IWebDriver driver)
         {
-            driver.FindElement(By.XPath("//li[@class='UserAvatar']")).Click();
-            driver.FindElement(By.Id("LogoutButton")).Click();
+            driver.FindElement(PageHandlers.UserAvatar).Click();
+            driver.FindElement(PageHandlers.Logout).Click();
 
             driver.Close();
         }

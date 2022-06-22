@@ -13,7 +13,15 @@ namespace SidnetTest.GeneralHelpers
 
         public static By UsersId = By.Id("Users");
 
+        public static By UserId = By.Id("User");
+
+        public static By PasswordId = By.Id("Password");
+
         public static By Submit = By.Id("SubmitAndContinue");
+
+        public static By Login = By.Id("LoginButton");
+
+        public static By Logout = By.Id("LogoutButton");
 
         #endregion
 
@@ -22,6 +30,8 @@ namespace SidnetTest.GeneralHelpers
         public static By NavigationDashboard = By.Id("nav-Dashboard");
 
         public static By AdminDashboard = By.Id("nav-Admin");
+
+        public static By UserAvatar = By.XPath("//li[@class='UserAvatar']");
 
         #endregion
 

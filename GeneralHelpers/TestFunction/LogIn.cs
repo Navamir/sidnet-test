@@ -6,9 +6,9 @@ namespace SidnetTest.GeneralHelpers.TestFunction
     {
         public void DoLogIn(IWebDriver driver, string user, string password)
         {
-            driver.FindElement(By.Id("User")).SendKeys(user);
-            driver.FindElement(By.Id("Password")).SendKeys(password);
-            driver.FindElement(By.Id("LoginButton")).Click();
+            driver.FindElement(PageHandlers.UserId).SendKeys(user);
+            driver.FindElement(PageHandlers.PasswordId).SendKeys(password);
+            driver.FindElement(PageHandlers.Login).Click();
         }
     }
 }
